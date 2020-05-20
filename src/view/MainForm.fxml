@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fx:id="MainForm" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1004.0" prefWidth="1900.0" style="-fx-background-color: #0C090A; -fx-border-color: #FFF380;">
+         <children>
+            <AnchorPane prefHeight="85.0" prefWidth="1500.0">
+               <children>
+                  <AnchorPane prefHeight="85.0" prefWidth="1900.0" style="-fx-border-color: #FFF380;">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfafa" glyphName="HOME" layoutX="14.0" layoutY="52.0" size="44.0" styleClass="cursor_hand" wrappingWidth="20.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </FontAwesomeIconView>
+                        <Hyperlink fx:id="hlink" layoutX="225.0" layoutY="28.0" onMouseClicked="#GoToWeb" text="GO TO WEB PAGE" textFill="#f2f2f2">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Hyperlink>
+                        <FontAwesomeIconView fill="#fffafa" glyphName="DATABASE" layoutX="1512.0" layoutY="52.0" size="24.0" text="" />
+                        <Text fill="#fffefe" layoutX="1542.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restore DB">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#fffefe" layoutX="1760.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Backup DB">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <FontAwesomeIconView fill="#fffdfd" glyphName="DATABASE" layoutX="1704.0" layoutY="51.0" size="24.0" text="" />
+                        <FontAwesomeIconView fill="#fff9f9" glyphName="REPEAT" layoutX="1725.0" layoutY="51.0" size="24.0" text="" />
+                        <Label fx:id="lblMenu" layoutX="933.0" layoutY="12.0" prefHeight="60.0" prefWidth="276.0" textFill="#f5f0f0">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="AncMenu" layoutX="244.0" layoutY="85.0" prefHeight="920.0" prefWidth="1800.0" style="-fx-background-color: #FFF380;" styleClass="back2">
+               <children>
+                  <ImageView fx:id="ivStd" fitHeight="218.0" fitWidth="333.0" layoutX="199.0" layoutY="69.0" onMouseClicked="#navigate" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand; -fx-opacity: 0.9;">
+                     <image>
+                        <Image url="@../asset/stu2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ivExam" fitHeight="216.0" fitWidth="341.0" layoutX="706.0" layoutY="70.0" onMouseClicked="#navigate" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand; -fx-opacity: 0.9;">
+                     <image>
+                        <Image url="@../asset/ex.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ivEmp" fitHeight="217.0" fitWidth="326.0" layoutX="1141.0" layoutY="70.0" onMouseClicked="#navigate" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand; -fx-opacity: 0.9;">
+                     <image>
+                        <Image url="@../asset/employees.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ivLec" fitHeight="210.0" fitWidth="344.0" layoutX="189.0" layoutY="377.0" onMouseClicked="#navigate" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand; -fx-opacity: 0.9;">
+                     <image>
+                        <Image url="@../asset/lec2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ivTrial" fitHeight="220.0" fitWidth="314.0" layoutX="702.0" layoutY="376.0" onMouseClicked="#navigate" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand; -fx-opacity: 0.9;">
+                     <image>
+                        <Image url="@../asset/dr2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ivTraining" fitHeight="215.0" fitWidth="322.0" layoutX="1149.0" layoutY="374.0" onMouseClicked="#navigate" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand; -fx-opacity: 0.9;">
+                     <image>
+                        <Image url="@../asset/trai.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="316.0" layoutX="193.0" layoutY="715.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="193.0" layoutY="669.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="217.0" fitWidth="338.0" layoutX="191.0" layoutY="669.0" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand; -fx-opacity: 0.9;">
+                     <image>
+                        <Image url="@../asset/sup1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="206.0" fitWidth="335.0" layoutX="697.0" layoutY="672.0" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand; -fx-opacity: 0.9;">
+                     <image>
+                        <Image url="@../asset/cars.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblDescription" layoutX="706.0" layoutY="27.0" prefHeight="21.0" prefWidth="388.0" />
+                  <ProgressBar fx:id="pgb" layoutX="361.0" layoutY="886.0" prefHeight="23.0" prefWidth="952.0" progress="0.0" />
+                  <ImageView fx:id="ivBranch" fitHeight="218.0" fitWidth="305.0" layoutX="1157.0" layoutY="665.0" onMouseClicked="#navigate" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/bra.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <FontAwesomeIconView fill="#fcfafa" glyphName="DASHBOARD" layoutX="14.0" layoutY="161.0" size="24.0" text="" />
+            <Text fx:id="miDashboard" fill="#fcfafa" layoutX="70.0" layoutY="161.0" onMouseClicked="#navigate2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="hover_border" text="Dashboard">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="#f8f8f8" glyphName="USER" layoutX="17.0" layoutY="251.0" size="24.0" />
+            <Text fx:id="miStd" fill="#f5f5f5" layoutX="70.0" layoutY="252.0" onMouseClicked="#navigate2" strokeType="OUTSIDE" strokeWidth="0.0" text="Students">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="#fcfafa" glyphName="LIST_UL" layoutX="14.0" layoutY="334.0" size="24.0" />
+            <Text fx:id="miEmp" fill="#fffbfb" layoutX="71.0" layoutY="335.0" onMouseClicked="#navigate2" strokeType="OUTSIDE" strokeWidth="0.0" text="Employees">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView layoutX="107.0" layoutY="133.28570556640625" />
+            <FontAwesomeIconView fill="#fffdfd" glyphName="BOOK" layoutX="15.0" layoutY="427.0" size="24.0" />
+            <Text fx:id="miExam" fill="#fffefe" layoutX="70.0" layoutY="428.0" onMouseClicked="#navigate2" strokeType="OUTSIDE" strokeWidth="0.0" text="Exams">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="#fcf8f8" glyphName="ROAD" layoutX="13.0" layoutY="603.0" size="24.0" />
+            <Text fx:id="miTrial" fill="#fffdfd" layoutX="69.0" layoutY="602.0" onMouseClicked="#navigate2" strokeType="OUTSIDE" strokeWidth="0.0" text="Trials">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="#fcfcfc" glyphName="BUILDING" layoutX="16.0" layoutY="514.0" size="24.0" text="" />
+            <Text fx:id="miBranch" fill="#f8f6f6" layoutX="69.0" layoutY="512.0" onMouseClicked="#navigate2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="cursor_hand" text="Branches">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="#f5f0f0" glyphName="CAR" layoutX="11.0" layoutY="688.0" size="24.0" text="" />
+            <Text fx:id="miVehicle" fill="#fcfcfc" layoutX="71.0" layoutY="687.0" onMouseClicked="#navigate2" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicles">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="#fcf9f9" glyphName="CALENDAR_ALT" layoutX="13.0" layoutY="768.0" size="24.0" />
+            <Text fx:id="miTraining" fill="WHITE" layoutX="71.0" layoutY="769.0" onMouseClicked="#navigate2" strokeType="OUTSIDE" strokeWidth="0.0" text="Training">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="#fffafa" glyphName="MAN" layoutX="12.0" layoutY="845.0" size="24.0" />
+            <Text fx:id="miSupplier" fill="#e8e0e0" layoutX="68.0" layoutY="844.0" onMouseClicked="#navigate2" strokeType="OUTSIDE" strokeWidth="0.0" text="Suppliers">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="#fcf9f9" glyphName="FILE_TEXT_ALT" layoutX="15.0" layoutY="925.0" size="24.0" text="" />
+            <Text fill="#fcf8f8" layoutX="73.0" layoutY="924.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

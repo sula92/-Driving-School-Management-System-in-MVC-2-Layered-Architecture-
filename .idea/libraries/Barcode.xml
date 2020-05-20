@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Barcode">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/Barcode/com.keepautomation.barcode.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Barcode/KA.Barcode.for.Java.zip!/" />
+      <root url="jar://$PROJECT_DIR$/src/Barcode/iText7-Core-7.1.3.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Cryptography">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Libraries/Cryptography/Cryptography.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Libraries/jfoenix/jfoenix-1.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

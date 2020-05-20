@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="RegEx_Simulator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Libraries/Regx Simulator/RegEx_Simulator.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Libraries/mysql connector/mysql-connector-java-8.0.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Libraries/fontawesome/fontawesomefx-8.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Libraries/fontawesome/fontawesomefx-glyphsbrowser-all-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Libraries/Cryptography/Cryptography.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
