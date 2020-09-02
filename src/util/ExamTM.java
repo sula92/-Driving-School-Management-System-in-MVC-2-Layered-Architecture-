@@ -1,5 +1,7 @@
 package util;
 
+import javafx.scene.control.Button;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -13,11 +15,12 @@ public class ExamTM {
     private String totpass;
     private String totfail;
     private String totab;
+    private Button button;
 
     public ExamTM() {
     }
 
-    public ExamTM(String exam_ID, String date, String time, String venue, String tot, String totpass, String totfail, String totab) {
+    public ExamTM(String exam_ID, String date, String time, String venue, String tot, String totpass, String totfail, String totab, Button button) {
         Exam_ID = exam_ID;
         Date = date;
         Time = time;
@@ -26,9 +29,8 @@ public class ExamTM {
         this.totpass = totpass;
         this.totfail = totfail;
         this.totab = totab;
+        this.button = button;
     }
-
-
 
     public String getExam_ID() {
         return Exam_ID;
@@ -94,6 +96,14 @@ public class ExamTM {
         this.totab = totab;
     }
 
+    public Button getButton() {
+        return button;
+    }
+
+    public void setButton(Button button) {
+        this.button = button;
+    }
+
     @Override
     public String toString() {
         return "ExamTM{" +
@@ -105,6 +115,7 @@ public class ExamTM {
                 ", totpass='" + totpass + '\'' +
                 ", totfail='" + totfail + '\'' +
                 ", totab='" + totab + '\'' +
+                ", button=" + button +
                 '}';
     }
 }

@@ -89,7 +89,7 @@
                         <Image url="@../asset/sup1.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="206.0" fitWidth="335.0" layoutX="697.0" layoutY="672.0" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand; -fx-opacity: 0.9;">
+                  <ImageView fx:id="ivVehicle" fitHeight="206.0" fitWidth="335.0" layoutX="697.0" layoutY="672.0" onMouseClicked="#navigate" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand; -fx-opacity: 0.9;">
                      <image>
                         <Image url="@../asset/cars.jpg" />
                      </image>

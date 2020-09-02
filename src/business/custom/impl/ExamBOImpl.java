@@ -24,13 +24,16 @@ public class ExamBOImpl implements ExamBO {
 
 
     @Override
-    public boolean updateItem(ExamDTO item) throws Exception {
-        return false;
+    public boolean updateExam(ExamDTO examdto) throws Exception {
+        Exam exam=new Exam(examdto.getExam_ID(),examdto.getDate(),examdto.getTime(),examdto.getVenue());
+        return examDAO.update(exam);
     }
 
     @Override
-    public boolean deleteExam(String itemCode) throws Exception {
-        return false;
+    public boolean deleteExam(String id) throws Exception {
+
+            return examDAO.delete(id);
+
     }
 
     @Override
@@ -45,7 +48,12 @@ public class ExamBOImpl implements ExamBO {
 
 
     @Override
-    public String getLastItemCode() throws Exception {
+    public String getLastExamID()  {
+        try {
+            return examDAO.getLastExamID();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return null;
     }
 

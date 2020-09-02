@@ -4,13 +4,10 @@ import DAO.DAOFactory;
 import DAO.DAOTypes;
 import DAO.custom.BranchDAO;
 import business.custom.BranchBO;
-import business.exception.AlreadyExistsInOrderException;
 import dto.BranchDTO;
 import entity.Branch;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Base64;
 import java.util.List;
 
 public class BranchBOImpl implements BranchBO {
@@ -28,13 +25,14 @@ public class BranchBOImpl implements BranchBO {
 
     @Override
     public boolean updateBranch(BranchDTO branchDTO) throws Exception {
-        return false;
+        return branchDAO.update(new Branch(branchDTO.getBranchId(),
+                branchDTO.getBranchNm(), branchDTO.getBranchAdd(), branchDTO.getContact(),branchDTO.getEmail(),branchDTO.getDOE()));
     }
 
     @Override
     public boolean deleteBranch(String brachId) throws Exception {
 
-        return false;
+        return branchDAO.delete(brachId);
     }
 
     @Override
@@ -49,7 +47,7 @@ public class BranchBOImpl implements BranchBO {
 
     @Override
     public String getLastBranchId() throws Exception {
-        return null;
+        return branchDAO.getLastBranchId();
     }
 
     @Override
@@ -59,6 +57,10 @@ public class BranchBOImpl implements BranchBO {
 
     @Override
     public List<String> getAllbranchId() throws Exception {
-        return null;
+        ArrayList<String> ids= new ArrayList<>();
+        branchDAO.findAll().stream().forEach(branch -> {
+            ids.add(branch.getBranch_ID());
+        });
+        return ids;
     }
 }

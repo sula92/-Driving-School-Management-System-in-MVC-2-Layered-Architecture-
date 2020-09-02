@@ -2,6 +2,7 @@ package util;
 
 import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTimePicker;
+import javafx.scene.control.Button;
 
 public class TrialTM {
 
@@ -13,11 +14,12 @@ public class TrialTM {
     private String totpass;
     private String totfail;
     private String totab;
+    Button button;
 
     public TrialTM() {
     }
 
-    public TrialTM(String trail_ID, String date, String time, String venue, String tot, String totpass, String totfail, String totab) {
+    public TrialTM(String trail_ID, String date, String time, String venue, String tot, String totpass, String totfail, String totab, Button button) {
         Trail_ID = trail_ID;
         Date = date;
         Time = time;
@@ -26,9 +28,8 @@ public class TrialTM {
         this.totpass = totpass;
         this.totfail = totfail;
         this.totab = totab;
+        this.button = button;
     }
-
-
 
     public String getTrail_ID() {
         return Trail_ID;
@@ -94,6 +95,14 @@ public class TrialTM {
         this.totab = totab;
     }
 
+    public Button getButton() {
+        return button;
+    }
+
+    public void setButton(Button button) {
+        this.button = button;
+    }
+
     @Override
     public String toString() {
         return "TrialTM{" +
@@ -105,6 +114,7 @@ public class TrialTM {
                 ", totpass='" + totpass + '\'' +
                 ", totfail='" + totfail + '\'' +
                 ", totab='" + totab + '\'' +
+                ", button=" + button +
                 '}';
     }
 }

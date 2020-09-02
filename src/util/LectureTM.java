@@ -1,6 +1,8 @@
 package util;
 
-import java.awt.*;
+import javafx.scene.control.Button;
+
+
 
 public class LectureTM {
 
@@ -9,17 +11,19 @@ public class LectureTM {
     private String date;
     private String time;
     private String venue;
+    private Button del;
 
 
     public LectureTM() {
     }
 
-    public LectureTM(String leci, String lecNm, String date, String time, String venue) {
+    public LectureTM(String leci, String lecNm, String date, String time, String venue, Button del) {
         this.leci = leci;
         this.lecNm = lecNm;
         this.date = date;
         this.time = time;
         this.venue = venue;
+        this.del = del;
     }
 
     public String getLeci() {
@@ -62,6 +66,14 @@ public class LectureTM {
         this.venue = venue;
     }
 
+    public Button getDel() {
+        return del;
+    }
+
+    public void setDel(Button del) {
+        this.del = del;
+    }
+
     @Override
     public String toString() {
         return "LectureTM{" +
@@ -70,6 +82,7 @@ public class LectureTM {
                 ", date='" + date + '\'' +
                 ", time='" + time + '\'' +
                 ", venue='" + venue + '\'' +
+                ", del=" + del +
                 '}';
     }
 }

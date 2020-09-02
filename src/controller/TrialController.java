@@ -4,15 +4,18 @@ import DAO.CrudUtil;
 import business.BOFactory;
 import business.BOTypes;
 import business.custom.TrialBO;
+import business.exception.SomeThingsWrongException;
 import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTimePicker;
+import db.DBConnection;
 import dto.ExamDTO;
 import dto.TrialDTO;
 import entity.Trial;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Rectangle2D;
@@ -31,14 +34,12 @@ import util.TrialTM;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -48,7 +49,7 @@ public class TrialController  {
     public JFXDatePicker date;
     public JFXTimePicker time;
     public JFXTextField venue;
-    public TableView tblTrial;
+    public TableView<TrialTM> tblTrial;
     public TableColumn coltrialid;
     public TableColumn coldate;
     public TableColumn coltime;
@@ -63,10 +64,12 @@ public class TrialController  {
     public Pane paneView;
     public BarChart<String,Number> bar;
     public Button btnAddNew;
+    public TableColumn colDel;
     private TrialBO TrialBO=BOFactory.getInstance().getBO(BOTypes.TRIAL);
 
 
     public void initialize() {
+        tblTrial.getItems().clear();
 
         TrialForm.setMaxHeight(1500);
         TrialForm.setMaxWidth(2500);
@@ -80,50 +83,7 @@ public class TrialController  {
             coltotpass.setCellValueFactory(new PropertyValueFactory<>("totpass"));
             coltotfail.setCellValueFactory(new PropertyValueFactory<>("totfail"));
             colab.setCellValueFactory(new PropertyValueFactory<>("totab"));
-
-
-            /*try {
-                ResultSet rst = CrudUtil.execute("SELECT * FROM trial");
-
-                ObservableList<TrialTM> row = FXCollections.observableArrayList();
-
-
-                while (rst.next()) {
-
-                    String p = getStatusCount(rst.getString(1), "passed");
-                    String f = getStatusCount(rst.getString(1), "failed");
-                    String a = getStatusCount(rst.getString(1), "absent");
-
-                    int pass = Integer.parseInt(p);
-                    int fail = Integer.parseInt(f);
-                    int ab = Integer.parseInt(a);
-                    String tot = String.valueOf(pass + fail + ab);
-
-                    System.out.println(rst.getString(1));
-                    System.out.println(rst.getDate(2));
-                    System.out.println(rst.getTime(3));
-
-
-                    String date = String.valueOf(rst.getDate(2));
-                    String time = String.valueOf(rst.getTime(3));
-
-
-                    row.add(new TrialTM(rst.getString(1), date, time, rst.getString(4), p, f, a, tot));
-
-                    System.out.println("jdbc" + Arrays.toString(new ObservableList[]{row}));
-
-                }
-                ObservableList<TrialTM> Ilist = FXCollections.observableArrayList(row);
-                tblTrial.setItems(Ilist);
-                tblTrial.refresh();
-
-
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }*/
-
+            colDel.setCellValueFactory(new PropertyValueFactory<>("button"));
 
 
 
@@ -152,12 +112,28 @@ public class TrialController  {
                 int ab = Integer.parseInt(a);
                 String tot = String.valueOf(pass + fail + ab);
 
+                Button button=new Button("Delete");
+                button.setStyle("-fx-background-color: red");
 
-                trials.add(new TrialTM(trial.getTrial_id(), date, time, trial.getVenue(), tot, p, f, a));
+                trials.add(new TrialTM(trial.getTrial_id(), date, time, trial.getVenue(), tot, p, f, a,button));
+
+                button.setOnAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+
+                        TrialTM trialTM=new TrialTM(trial.getTrial_id(),date, time, trial.getVenue(),tot, p, f, a,button);
+                        btnDeleteOnAction(trialTM);
+                        tblTrial.getSelectionModel().clearSelection();
+                        trials.remove(trialTM);
+                        trials.clear();
+                        tblTrial.refresh();
+                        initialize();
+
+                    }
+                });
+
+
             }
-
-            tblTrial.setItems(trials);
-
 
 
             System.out.println(Arrays.toString(new ObservableList[]{trials}));
@@ -185,6 +161,7 @@ public class TrialController  {
             //btnDelete.setDisable(false);
 
             trialid.setText(SelectedItem.getTrail_ID());
+            System.out.println("XXXXX"+SelectedItem.getTrail_ID());
             date.setValue(LocalDate.parse(SelectedItem.getDate()));
             time.setValue(LocalTime.parse(SelectedItem.getTime()));
             venue.setText(SelectedItem.getVenue());
@@ -298,10 +275,32 @@ public class TrialController  {
 
     }
 
-    public void Delete(ActionEvent event) {
+    public void btnDeleteOnAction(TrialTM trialTM) {
+
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
+                "Are you sure whether you want to delete this item?",
+                ButtonType.YES, ButtonType.NO);
+        Optional<ButtonType> buttonType = alert.showAndWait();
+        if (buttonType.get() == ButtonType.YES) {
+            TrialTM selectedItem = tblTrial.getSelectionModel().getSelectedItem();
+            try {
+                PreparedStatement pstm = DBConnection.getInstance().getConnection().prepareStatement("DELETE FROM Trial WHERE Trial_ID=?");
+                pstm.setObject(1, trialTM.getTrail_ID());
+                if (pstm.executeUpdate() == 0) {
+                    new Alert(Alert.AlertType.ERROR, "Failed to delete the item", ButtonType.OK).show();
+                } else {
+                    new Alert(Alert.AlertType.INFORMATION, "Deleted", ButtonType.OK).show();
+                    tblTrial.getItems().remove(trialTM);
+                    tblTrial.getSelectionModel().clearSelection();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 
-    public void AddNew(ActionEvent event) {
+    public void AddNew(ActionEvent event) throws Exception {
 
         trialid.clear();
         date.getEditor().clear();
@@ -310,6 +309,27 @@ public class TrialController  {
 
         btnSave.setText("Save");
         btnDelete.setDisable(true);
+
+        try {
+            String lid = null;
+            int id= Integer.parseInt(TrialBO.getLastTrialid())+1;
+            if(id<10){
+                lid="00"+id;
+                trialid.setText(lid);
+            }
+            else if(id>=10 && id<100){
+                lid="0"+id;
+                trialid.setText(lid);
+            }
+            else {
+                lid=id+"";
+                trialid.setText(lid);
+            }
+
+            //throw new SomeThingsWrongException("Some Things Went Wrong, Please Contact Sula!");
+        } catch (SomeThingsWrongException e) {
+            e.printStackTrace();
+        }
 
     }
 }

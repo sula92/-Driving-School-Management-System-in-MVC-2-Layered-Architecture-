@@ -9,13 +9,13 @@ public interface ExamBO extends SuperBO {
 
     boolean saveExam(ExamDTO examDTO) throws Exception;
 
-    boolean updateItem(ExamDTO item) throws Exception;
+    boolean updateExam(ExamDTO item) throws Exception;
 
     boolean deleteExam(String itemCode) throws Exception;
 
     List<ExamDTO> findAllExams() throws Exception;
 
-    String getLastItemCode() throws Exception;
+    String getLastExamID() throws Exception;
 
     ExamDTO findItem(String itemCode) throws Exception;
 

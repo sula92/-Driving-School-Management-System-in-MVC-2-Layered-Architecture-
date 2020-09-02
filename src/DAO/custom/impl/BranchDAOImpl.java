@@ -36,14 +36,24 @@ public class BranchDAOImpl implements BranchDAO {
 
     @Override
     public boolean update(Branch branch) throws Exception {
-        return false;
+        return CrudUtil.execute("update branch set branch_name=?, address=?, contact_number, email, established_date=? where branch_id=?",branch.getBranch_Name(),branch.getAddress(),branch.getContact_Number(),branch.getEmail(),branch.getEstablished_Date(),branch.getBranch_ID());
     }
 
     @Override
     public boolean delete(String s) throws Exception {
-        return false;
+        return CrudUtil.execute("delete from branch where branch_id=?",s);
     }
 
 
-
+    @Override
+    public String getLastBranchId() {
+        try {
+            ResultSet r= CrudUtil.execute("select Branch_ID from branch");
+            r.last();
+            return r.getString(1);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

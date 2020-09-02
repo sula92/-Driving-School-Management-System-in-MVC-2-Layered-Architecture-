@@ -1,15 +1,12 @@
 package controller;
 
-import DAO.CrudUtil;
 import business.BOFactory;
 import business.BOTypes;
 import business.custom.LectureBO;
-import business.exception.AlreadyExistsInOrderException;
+import business.exception.AlreadyExistsInExamException;
 import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTimePicker;
-import com.keepautomation.barcode.BarCode;
-import com.keepautomation.barcode.IBarCode;
 import dto.LectureDTO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -22,7 +19,6 @@ import javafx.scene.Scene;
 import javafx.scene.chart.*;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -30,8 +26,6 @@ import util.LectureTM;
 
 import java.io.IOException;
 import java.net.URL;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.*;
@@ -76,6 +70,7 @@ public class LectureController implements Initializable {
         coldate.setCellValueFactory(new PropertyValueFactory<>("date"));
         coltime.setCellValueFactory(new PropertyValueFactory<>("time"));
         colvenue.setCellValueFactory(new PropertyValueFactory<>("venue"));
+        coldel.setCellValueFactory(new PropertyValueFactory<>("del"));
 
 
         System.out.println("hello");
@@ -125,7 +120,9 @@ public class LectureController implements Initializable {
 
                 String date= String.valueOf(lecture.getDate());
                 String time=String.valueOf(lecture.getTime());
-                lectureTMS.add(new LectureTM(lecture.getLecture_id(),lecture.getLecture_name(),date,time,lecture.getVenue()));
+                Button button=new Button("Delete");
+                button.setStyle("-fx-background-color: red");
+                lectureTMS.add(new LectureTM(lecture.getLecture_id(),lecture.getLecture_name(),date,time,lecture.getVenue(),button));
             }
             tblLec.setItems(lectureTMS);
             tblLec.refresh();
@@ -149,7 +146,7 @@ public class LectureController implements Initializable {
 
             btnSave.setText("UPDATE");
             btnSave.setDisable(false);
-            btnDelete.setDisable(false);
+
 
             lecaid.setText(SelectedItem.getLeci());
             LecName.setText(SelectedItem.getLecNm());
@@ -163,7 +160,7 @@ public class LectureController implements Initializable {
 
         pie.setData(getChartData());
         pie.setLegendSide(Side.LEFT);
-        pie.setTitle("Computer Language Popularities");
+        pie.setTitle("Student Attendance");
         pie.setClockwise(false);
 
 //.......................................................................................
@@ -178,7 +175,7 @@ public class LectureController implements Initializable {
 
         //Creating the Bar chart
          bar = new BarChart<>(xAxis, yAxis);
-        bar.setTitle("Comparison between various cars");
+        bar.setTitle("Comparison between Attendence for Various Lessons");
 
         //Prepare XYChart.Series objects by setting data
         XYChart.Series<String, Number> series1 = new XYChart.Series<>();
@@ -261,6 +258,7 @@ public class LectureController implements Initializable {
         date.setDisable(false);
         time.setDisable(false);
         venue.setDisable(false);
+        btnSave.setText("Save");
     }
 
     public void Delete(ActionEvent event) {
@@ -274,7 +272,7 @@ public class LectureController implements Initializable {
             try {
                 lectureBO.deleteLectures(selectedItem.getLeci());
                 tblLec.getItems().remove(selectedItem);
-            }catch (AlreadyExistsInOrderException e){
+            }catch (AlreadyExistsInExamException e){
                 new Alert(Alert.AlertType.INFORMATION,e.getMessage()).show();
             } catch (Exception e) {
                 new Alert(Alert.AlertType.ERROR,"Something went wrong, please contact DEPPO").show();
@@ -293,11 +291,11 @@ public class LectureController implements Initializable {
     private ObservableList<PieChart.Data> getChartData() {
         ObservableList<PieChart.Data> pieChartData =
                 FXCollections.observableArrayList(
-                        new PieChart.Data("Grapefruit", 13),
-                        new PieChart.Data("Oranges", 25),
-                        new PieChart.Data("Plums", 10),
-                        new PieChart.Data("Pears", 22),
-                        new PieChart.Data("Apples", 30));
+                        new PieChart.Data("Monday", 13),
+                        new PieChart.Data("Tuesday", 25),
+                        new PieChart.Data("Wednsday", 10),
+                        new PieChart.Data("Thursday", 22),
+                        new PieChart.Data("Friday", 30));
 
         return pieChartData;
     }

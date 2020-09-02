@@ -1,6 +1,7 @@
 package DAO;
 
 import DAO.custom.EmployeeDAO;
+import DAO.custom.TrainingDAO;
 import DAO.custom.impl.*;
 import entity.Person;
 
@@ -32,6 +33,10 @@ public class DAOFactory {
                 return (T) new PersonDAOImpl();
             case PERSON_CONTACT:
                 return (T) new Person_ContactDAOImpl();
+            case STUDENT:
+                return (T) new StudentDAOImpl();
+            case TRAINING:
+                return (T) new TrainingDAOImpl();
 
             default:
                 return null;

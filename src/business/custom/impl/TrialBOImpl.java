@@ -1,5 +1,6 @@
 package business.custom.impl;
 
+import DAO.CrudUtil;
 import DAO.DAOFactory;
 import DAO.DAOTypes;
 import DAO.custom.TrialDAO;
@@ -8,6 +9,7 @@ import dto.ExamDTO;
 import dto.TrialDTO;
 import entity.Trial;
 
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,7 +47,10 @@ public class TrialBOImpl implements TrialBO {
 
     @Override
     public String getLastTrialid() throws Exception {
-        return null;
+        ResultSet r=CrudUtil.execute("select Trial_ID from trial");
+        r.last();
+        return r.getString(1);
+
     }
 
     @Override

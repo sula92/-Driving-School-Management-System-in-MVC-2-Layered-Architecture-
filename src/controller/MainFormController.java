@@ -55,6 +55,7 @@ public class MainFormController implements Initializable  {
     public AnchorPane AncMenu;
     public Hyperlink hlink;
     public ImageView ivBranch;
+    public ImageView ivVehicle;
 
 
     @Override
@@ -132,6 +133,10 @@ public class MainFormController implements Initializable  {
                 this.lblMenu.setText("Manage Trial");
                 this.lblDescription.setText("Click to Manage Trial Details Or Search Details");
                 break;
+            case "ivVehicle":
+                this.lblMenu.setText("Manage Vehicle");
+                this.lblDescription.setText("Click to Manage Vehicle Details Or Search Details");
+                break;
         }
 
     }
@@ -190,6 +195,10 @@ public class MainFormController implements Initializable  {
                     fxmlLoader = new FXMLLoader(this.getClass().getResource("/view/Lecture.fxml"));
                     root = fxmlLoader.load();
                     break;
+                case "ivVehicle":
+                    fxmlLoader = new FXMLLoader(this.getClass().getResource("/view/vehicle.fxml"));
+                    root = fxmlLoader.load();
+                    break;
             }
 
 
@@ -239,6 +248,7 @@ public class MainFormController implements Initializable  {
                     fxmlLoader = new FXMLLoader(this.getClass().getResource("/view/Trial.fxml"));
                     root = fxmlLoader.load();
                     break;
+
 
             }
 

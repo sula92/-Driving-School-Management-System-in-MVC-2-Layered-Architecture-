@@ -49,12 +49,13 @@ public class ExamDAOImpl implements ExamDAO {
 
     @Override
     public boolean update(Exam entity) throws Exception {
-        return false;
+        String sql="update exam set  Date=? Time=?, Venue=? where Exam_ID=?";
+        return CrudUtil.execute(sql,entity.getDate(),entity.getTime(),entity.getVenue(),entity.getExam_ID());
     }
 
     @Override
     public boolean delete(String s) throws Exception {
-        return false;
+        return CrudUtil.execute("DELETE FROM exam WHERE Exam_ID=?",s);
     }
 
     public String getStatusCount(String exid,String status) throws Exception {
@@ -71,6 +72,14 @@ public class ExamDAOImpl implements ExamDAO {
 
         return c;
 
+    }
+
+    @Override
+    public String getLastExamID() throws Exception {
+        ResultSet r=CrudUtil.execute("select Exam_ID from exam");
+        r.last();
+        System.out.println(r.getString(1));
+        return r.getString(1);
     }
 
 }

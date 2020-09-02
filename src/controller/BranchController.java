@@ -20,7 +20,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.effect.DropShadow;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -28,9 +30,11 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import util.BranchTM;
 
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.ResourceBundle;
@@ -59,8 +63,9 @@ public class BranchController implements Initializable {
     public TableColumn colContact;
     public TableColumn colEmail;
     public TableColumn colEsDate;
-    public TableView tblBranch;
+    public TableView<BranchTM> tblBranch;
     public TableColumn colDelete;
+    public JFXTextField txtBid;
 
     private BranchBO branchBO = BOFactory.getInstance().getBO(BOTypes.BRANCH);
 
@@ -68,8 +73,46 @@ public class BranchController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+        colBranchID.setCellValueFactory(new PropertyValueFactory<>("branchId"));
+        colBranchName.setCellValueFactory(new PropertyValueFactory<>("branchName"));
+        colAddress.setCellValueFactory(new PropertyValueFactory<>("address"));
+        colContact.setCellValueFactory(new PropertyValueFactory<>("contactNumber"));
+        colEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
+        colEsDate.setCellValueFactory(new PropertyValueFactory<>("establishedDate"));
+        colDelete.setCellValueFactory(new PropertyValueFactory<>("btnDelete"));
+
+        try {
+            branchBO.findAllBranch().stream().forEach(branchDTO -> {
+                Button del=new Button("Delete");
+                del.setStyle("-fx-background-color: red");
+                tblBranch.getItems().add(new BranchTM(branchDTO.getBranchId(),branchDTO.getBranchNm(),branchDTO.getBranchAdd(),branchDTO.getContact(),branchDTO.getEmail(),branchDTO.getDOE(),del));
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        tblBranch.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            txtBid.setText(newValue.getBranchId());
+            BNm.setText(newValue.getBranchName());
+            BAdd.setText(newValue.getAddress());
+            BCont.setText(newValue.getContactNumber());
+            BEmail.setText(newValue.getEmail());
+            BDOE.setValue(LocalDate.parse(newValue.getEstablishedDate()));
+
+            String x="branchimages/";
+            String y=newValue.getBranchId();
+            String z=".jpg";
+            String xyz=x.concat(y).concat(z);
+
+            Image img=new Image(xyz);
+            ivBranch.setImage(img);
+            ivBranch.setFitHeight(200.0);
+            ivBranch.setFitWidth(300.0);
+        });
+
+
         AncMenu.setStyle("-fx-background-color: #2B3856; -fx-text-fill: white");
-        BId.setStyle("-fx-prompt-text-fill: white; -fx-text-fill: white");
+        txtBid.setStyle("-fx-prompt-text-fill: white; -fx-text-fill: white");
         BAdd.setStyle("-fx-prompt-text-fill: white; -fx-text-fill: white");
         BCont.setStyle("-fx-prompt-text-fill: white; -fx-text-fill: white");
         BDOE.setStyle("-fx-prompt-text-fill: white; -fx-text-fill: white");
@@ -270,6 +313,22 @@ public class BranchController implements Initializable {
         } catch (Exception e) {
             new Alert(Alert.AlertType.ERROR,"Something went wrong").show();
             Logger.getLogger("controller").log(Level.SEVERE, null,e);
+        }
+
+
+    }
+
+    public void btnAddNewonAction(ActionEvent actionEvent) throws Exception {
+
+        int lid= Integer.parseInt(branchBO.getLastBranchId());
+        if(lid<10){
+            txtBid.setText("00"+(lid+1));
+        }
+        else  if (lid>10 && lid<100){
+            txtBid.setText("0"+(lid+1));
+        }
+        else {
+            txtBid.setText((lid+1)+"");
         }
 
 

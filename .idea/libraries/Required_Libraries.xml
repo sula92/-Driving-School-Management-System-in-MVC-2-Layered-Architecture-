@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Required Libraries">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Required Libraries/com.keepautomation.barcode.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Required Libraries/mysql-connector-java-8.0.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Required Libraries/Cryptography.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Required Libraries/jfoenix-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Required Libraries/fontawesomefx-8.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

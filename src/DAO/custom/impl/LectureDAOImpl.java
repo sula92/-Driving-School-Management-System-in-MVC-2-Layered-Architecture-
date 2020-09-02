@@ -56,7 +56,8 @@ public class LectureDAOImpl implements LectureDAO {
 
     @Override
     public boolean update(Lecture entity) throws Exception {
-        return false;
+        String sql="update lecture set Lecture_Name=?, Date=? Time=?, Venue=? where Lecture_ID=?";
+        return CrudUtil.execute(sql,entity.getLecture_Name(),entity.getDate(),entity.getTime(),entity.getVenue(),entity.getLecture_ID());
     }
 
     @Override

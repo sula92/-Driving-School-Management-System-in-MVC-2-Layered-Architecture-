@@ -22,7 +22,8 @@ public class Person_ContactDAOImpl implements Person_ContactDAO {
 
     @Override
     public boolean save(Person_Contact person_contact) throws Exception {
-        return CrudUtil.execute("INSERT INTO Person_Contact VALUES (?,?,?,?,?,?)", person_contact.getNIC(), person_contact.getType_ID(), person_contact.getAddress(), person_contact.getMobile(),person_contact.getPhone(),person_contact.getEmail());
+        //return CrudUtil.execute("INSERT INTO Person_Contact VALUES (?,?,?,?,?,?)", person_contact.getNIC(), person_contact.getType_ID(), person_contact.getAddress(), person_contact.getMobile(),person_contact.getPhone(),person_contact.getEmail());
+        return false;
     }
 
     @Override

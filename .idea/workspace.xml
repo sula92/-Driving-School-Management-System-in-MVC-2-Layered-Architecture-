@@ -1,496 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97c842d2-278a-44d3-82e6-1e37f316f1c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Barcode.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Barcode1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Cryptography.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/RegEx_Simulator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Required Libraries/Cryptography.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Required Libraries/com.keepautomation.barcode.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Required Libraries/fontawesomefx-8.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Required Libraries/mysql-connector-java-8.0.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SamadhiLearners.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/AppInitializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/Barcode/KA.Barcode.for.Java.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/Barcode/com.keepautomation.barcode.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/Barcode/iText7-Core-7.1.3.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/CrudDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/CrudUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/DAOFactory$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/DAOFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/DAOTypes.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/SuperDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/BranchDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/EmployeeDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/ExamDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/LectureDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/PersonDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/Person_ContactDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/QueryDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/TrialDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/impl/BranchDAOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/impl/EmployeeDAOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/impl/ExamDAOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/impl/LectureDAOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/impl/PersonDAOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/impl/Person_ContactDAOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/impl/QueryDAOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/DAO/custom/impl/TrialDAOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/bcod.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/bra.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/branch.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/car.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/car2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/cars.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/dcar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/dr.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/dr2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/dr3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/employees.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/ex.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/fer3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/ff5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/home1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/home2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/id.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/lec.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/lec2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/money.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/stu2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/stu3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/sup.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/sup1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/trai.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/trial.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/asset/user1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/BOFactory$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/BOFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/BOTypes.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/SuperBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/custom/BranchBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/custom/EmployeeBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/custom/ExamBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/custom/LectureBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/custom/TrialBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/custom/impl/BranchBOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/custom/impl/EmployeeBOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/custom/impl/ExamBOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/custom/impl/LectureBOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/custom/impl/TrialBOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/business/exception/AlreadyExistsInOrderException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/controller/BcodeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/controller/BranchController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/controller/DashBoardController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/controller/EmployeeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/controller/ExamController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/controller/LectureController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/controller/MainFormController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/controller/StudFormController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/controller/StudentFormController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/controller/StudentMenuController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/controller/TrainingController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/controller/TrialController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/db/DBConnection.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/dto/BranchDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/dto/EmployeeDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/dto/ExamDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/dto/ExamInfoDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/dto/LectureDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/dto/StudentDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/dto/StudentPaymentDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/dto/StudentStatusDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/dto/TrialDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/Branch.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/CustomEmployeeEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/CustomExamEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/CustomStudentEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/CustomTrialEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/Employee.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/Exam.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/Lecture.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/Person_Contact.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/SuperEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/Supplier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/Trial.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/entity/Vehicles.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/util/BranchTM.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/util/EmployeeTM.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/util/ExamTM.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/util/LectureTM.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/util/StudentTM.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/util/SupplierTM.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/util/TrialTM.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/util/VehicleTM.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/Bcode.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/Branch.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/DashBoard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/Employee.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/Exam.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/Lecture.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/MainForm.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/StudForm.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/StudentForm.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/StudentMenu.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/Training.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/Trial.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/style/MFC1B29.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/style/MFC2632.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/style/MFC8C08.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/style/MFCE70D.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SamadhiLearners/view/style/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samadhi_learners.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Barcode/KA.Barcode.for.Java.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Barcode/com.keepautomation.barcode.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Barcode/iText7-Core-7.1.3.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/CrudDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/CrudUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/DAOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/DAOTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/SuperDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/BranchDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/EmployeeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/ExamDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/LectureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/PersonDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/Person_ContactDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/QueryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/TrialDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/impl/BranchDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/impl/EmployeeDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/impl/ExamDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/impl/LectureDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/impl/PersonDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/impl/Person_ContactDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/impl/QueryDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/custom/impl/TrialDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/bcod.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/bra.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/branch.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/car.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/car2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/cars.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/dcar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/dr.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/dr2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/dr3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/employees.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/ex.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/fer3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/ff5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/home1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/home2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/id.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/lec.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/lec2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/money.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/stu2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/stu3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/sup.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/sup1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/trai.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/trial.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/user1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/BOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/BOTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/SuperBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/custom/BranchBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/custom/EmployeeBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/custom/ExamBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/custom/LectureBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/custom/TrialBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/custom/impl/BranchBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/custom/impl/EmployeeBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/custom/impl/ExamBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/custom/impl/LectureBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/custom/impl/TrialBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/exception/AlreadyExistsInOrderException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/BcodeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/BranchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/DashBoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/ExamController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/LectureController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/MainFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/StudFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/StudentFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/StudentMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/TrainingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/TrialController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/BranchDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/EmployeeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/ExamDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/ExamInfoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/LectureDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/StudentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/StudentPaymentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/StudentStatusDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/TrialDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Branch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/CustomEmployeeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/CustomExamEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/CustomStudentEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/CustomTrialEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Lecture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Person_Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/SuperEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Supplier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Trial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Vehicles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/BranchTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/EmployeeTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/ExamTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/LectureTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/StudentTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/SupplierTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/TrialTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/VehicleTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Bcode.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Branch.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/DashBoard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Employee.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Exam.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Lecture.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/MainForm.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/StudForm.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/StudentForm.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/StudentMenu.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Training.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Trial.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/style/MFC1B29.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/style/MFC2632.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/style/MFC8C08.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/style/MFCE70D.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/style/style.css" afterDir="false" />
+    <list default="true" id="6b89519f-3576-4a77-9c29-4d53a2d5c688" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/-Driving-School-Management-System-in-MVC-2-Layered-Architecture-.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Required_Libraries.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/business/exception/SomeThingsWrongException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Barcode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Barcode.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Barcode1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Barcode1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Cryptography.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/RegEx_Simulator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/CrudUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/CrudUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/DAOTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/DAOTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/custom/BranchDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/BranchDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/custom/ExamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/ExamDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/custom/impl/BranchDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/impl/BranchDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/custom/impl/ExamDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/impl/ExamDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/custom/impl/LectureDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/impl/LectureDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/custom/impl/PersonDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/impl/PersonDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/custom/impl/Person_ContactDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/impl/Person_ContactDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/BOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/BOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/BOTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/BOTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/custom/ExamBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/custom/ExamBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/custom/impl/BranchBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/custom/impl/BranchBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/custom/impl/EmployeeBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/custom/impl/EmployeeBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/custom/impl/ExamBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/custom/impl/ExamBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/custom/impl/TrialBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/custom/impl/TrialBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/exception/AlreadyExistsInOrderException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/exception/AlreadyExistsInExamException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/BranchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/BranchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ExamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ExamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LectureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LectureController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MainFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MainFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/StudFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StudFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/StudentFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StudentFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/StudentMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StudentMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/TrainingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/TrialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/TrialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/StudentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Person_Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Person_Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/BranchTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/BranchTM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/ExamTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/ExamTM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/LectureTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/LectureTM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/StudentTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/StudentTM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/TrialTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/TrialTM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Branch.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Branch.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Lecture.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Lecture.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/StudForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StudForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Training.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Trial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Trial.fxml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controller/ExamController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="205" column="3" selection-start-line="205" selection-start-column="3" selection-end-line="205" selection-end-column="3" />
-              <folding>
-                <element signature="e#6871#6879#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/controller/TrialController.java" />
-        <option value="$PROJECT_DIR$/src/view/MainForm.fxml" />
-        <option value="$PROJECT_DIR$/src/DAO/custom/impl/BranchDAOImpl.java" />
-      </list>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="905" />
-    <option name="height" value="735" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="Required Libraries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SamadhiLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SamadhiLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1fa8Smak4JCnwVrKTUR4xFD9SxC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/DBScript" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/view" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IT\DEP5\samadhilearners\-Driving-School-Management-System-in-MVC-2-Layered-Architecture-\src\view" />
+      <recent name="E:\IT\DEP5\samadhilearners\-Driving-School-Management-System-in-MVC-2-Layered-Architecture-\src\branchimages" />
+      <recent name="E:\IT\DEP5\samadhilearners\-Driving-School-Management-System-in-MVC-2-Layered-Architecture-\src\studentimages" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AppInitializer" />
-      <module name="SamadhiLearners" />
+      <module name="-Driving-School-Management-System-in-MVC-2-Layered-Architecture-" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -501,388 +113,75 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="97c842d2-278a-44d3-82e6-1e37f316f1c0" name="Default Changelist" comment="" />
-      <created>1579670739864</created>
+      <changelist id="6b89519f-3576-4a77-9c29-4d53a2d5c688" name="Default Changelist" comment="" />
+      <created>1596444844657</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1579670739864</updated>
-      <workItem from="1579670741785" duration="978000" />
-      <workItem from="1579716941030" duration="3201000" />
-      <workItem from="1579752451101" duration="11306000" />
-      <workItem from="1580031364589" duration="593000" />
-      <workItem from="1580406743768" duration="2644000" />
-      <workItem from="1580633262387" duration="26000" />
-      <workItem from="1581525902637" duration="1260000" />
-      <workItem from="1581563350179" duration="1327000" />
-      <workItem from="1581572852443" duration="621000" />
-      <workItem from="1581662106179" duration="2226000" />
-      <workItem from="1581692252648" duration="52000" />
-      <workItem from="1583561733733" duration="3385000" />
-      <workItem from="1583815793327" duration="1206000" />
-      <workItem from="1584211662689" duration="686000" />
-      <workItem from="1584252441133" duration="2033000" />
-      <workItem from="1584287015278" duration="1145000" />
-      <workItem from="1584332974293" duration="3695000" />
-      <workItem from="1584337454509" duration="1999000" />
-      <workItem from="1584416115355" duration="629000" />
-      <workItem from="1584539850872" duration="2787000" />
-      <workItem from="1586246402132" duration="4113000" />
-      <workItem from="1586333246490" duration="614000" />
-      <workItem from="1586409641773" duration="2881000" />
-      <workItem from="1586493759972" duration="1812000" />
-      <workItem from="1589707260986" duration="1401000" />
-      <workItem from="1589773870782" duration="798000" />
-      <workItem from="1589868406025" duration="664000" />
-      <workItem from="1589889752228" duration="654000" />
-      <workItem from="1589950963716" duration="1242000" />
+      <updated>1596444844657</updated>
+      <workItem from="1596444846083" duration="13578000" />
+      <workItem from="1596551610625" duration="1526000" />
+      <workItem from="1596593737286" duration="1358000" />
+      <workItem from="1596724637924" duration="2243000" />
+      <workItem from="1596820558405" duration="8273000" />
+      <workItem from="1596866329352" duration="19310000" />
+      <workItem from="1596945523161" duration="37901000" />
+      <workItem from="1597022671123" duration="933000" />
+      <workItem from="1597030997915" duration="2915000" />
+      <workItem from="1597033936892" duration="2728000" />
+      <workItem from="1597138123686" duration="604000" />
+      <workItem from="1597582846352" duration="4444000" />
+      <workItem from="1597596357446" duration="3748000" />
+      <workItem from="1597991386294" duration="1262000" />
+      <workItem from="1598154411451" duration="1262000" />
+      <workItem from="1598206793607" duration="1559000" />
+      <workItem from="1598244860119" duration="134000" />
+      <workItem from="1598245689789" duration="652000" />
+      <workItem from="1598344861756" duration="1477000" />
+      <workItem from="1599015817969" duration="650000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55978000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2547043" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20790629" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32892805" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.30600291" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven" order="8" weight="0.3295302" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/view/Trial.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="148" lean-forward="true" selection-start-line="18" selection-start-column="107" selection-end-line="18" selection-end-column="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/StudentFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/EmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/Branch.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="177" selection-start-line="18" selection-start-column="136" selection-end-line="18" selection-end-column="177" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/ExamTM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/Exam.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2497" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/StudentMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/custom/impl/ExamDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/LectureController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5207">
-          <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_src.zip/javafx.controls/javafx/scene/control/ComboBox.java" />
-    <entry file="file://$PROJECT_DIR$/src/view/Employee.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/style/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/DashBoard.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-742" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/MainForm.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-659">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/MainFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1653">
-          <caret line="165" column="35" lean-forward="true" selection-start-line="165" selection-start-column="35" selection-end-line="165" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/TrialController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="254" column="35" selection-start-line="248" selection-start-column="8" selection-end-line="254" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/BcodeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-700">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/BranchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/CrudDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/custom/ExamDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/custom/LectureDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/custom/Person_ContactDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/custom/PersonDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/custom/QueryDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/custom/impl/BranchDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/custom/BranchDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/custom/EmployeeDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ExamController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="205" column="3" selection-start-line="205" selection-start-column="3" selection-end-line="205" selection-end-column="3" />
-          <folding>
-            <element signature="e#6871#6879#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Barcode</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="79" key="GridCell.Tab.0.bottom" timestamp="1598212239497">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="79" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598212239497" />
+    <state width="1493" height="79" key="GridCell.Tab.0.center" timestamp="1598212239496">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="79" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598212239496" />
+    <state width="1493" height="79" key="GridCell.Tab.0.left" timestamp="1598212239496">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="79" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598212239496" />
+    <state width="1493" height="79" key="GridCell.Tab.0.right" timestamp="1598212239496">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="79" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598212239496" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598206808274">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598206808274" />
   </component>
 </project>

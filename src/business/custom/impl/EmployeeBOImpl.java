@@ -27,7 +27,7 @@ public class EmployeeBOImpl implements EmployeeBO {
         System.out.println("BO_"+employeeDTO.toString());
 
 
-            boolean x = personDAO.save(new Person(employeeDTO.getNic(), "002", employeeDTO.getNm(), employeeDTO.getDob(), employeeDTO.getAge(), employeeDTO.getGender()));
+          /*  boolean x = personDAO.save(new Person(employeeDTO.getNic(), "002", employeeDTO.getNm(), employeeDTO.getDob(), employeeDTO.getAge(), employeeDTO.getGender()));
 
 
 
@@ -44,7 +44,8 @@ public class EmployeeBOImpl implements EmployeeBO {
                 }
 
            }
-          return x;
+          return x;*/
+          return false;
     }
 
     @Override

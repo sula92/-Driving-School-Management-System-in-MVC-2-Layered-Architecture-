@@ -44,21 +44,9 @@ public class DBConnection {
             String password = DEPCrypt.decode(properties.getProperty("sl.password"),"123");
             DBConnection.password = password;
 
-            /* Reading a file
-            File file = new File("resources/application.properties");
-            FileInputStream fis = new FileInputStream(file);        // Byte stream
-            InputStreamReader isr = new InputStreamReader(fis);     // Char stream
-            BufferedReader br = new BufferedReader(isr);            // String
 
-            String out = "";
-            String line = null;
-            while( (line = br.readLine())!=null ){
-                out += line;
-            }
-            System.out.println(out);
-             */
 
-            connection = DriverManager.getConnection("jdbc:mysql://" + ip + ":" + port + "/" + db + "?createDatabaseIfNotExist=true&allowMultiQueries=true", user, password);
+            connection = DriverManager.getConnection("jdbc:mysql://" + ip + ":" + port + "/" + db + "?serverTimezone=GMT%2B8", user, password);
             PreparedStatement pstm = connection.prepareStatement("SHOW TABLES");
             ResultSet resultSet = pstm.executeQuery();
             if (!resultSet.next()) {

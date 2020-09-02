@@ -31,6 +31,10 @@ public class BOFactory {
                 return (T) new TrialBOImpl();
             case EMPLOYEE:
                 return (T) new EmployeeBOImpl();
+            case STUDENT:
+                return (T) new StudentBOImpl();
+            case TRAINING:
+                return (T) new TrainingBOImpl();
 
 
 

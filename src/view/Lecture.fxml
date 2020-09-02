@@ -64,8 +64,7 @@
                     </columns>
                   </TableView>
                   <PieChart fx:id="pie" layoutX="468.0" layoutY="510.0" prefHeight="379.0" prefWidth="500.0" style="-fx-border-color: blue;" />
-                  <Button fx:id="btnSave" layoutX="110.0" layoutY="531.0" mnemonicParsing="false" onAction="#Save" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #157DEC;" text="Save" />
-                  <Button fx:id="btnDelete" layoutX="250.0" layoutY="531.0" mnemonicParsing="false" onAction="#Delete" prefHeight="40.0" prefWidth="98.0" style="-fx-background-color: #157DEC;" text="Delete" />
+                  <Button fx:id="btnSave" layoutX="110.0" layoutY="531.0" mnemonicParsing="false" onAction="#Save" prefHeight="38.0" prefWidth="318.0" style="-fx-background-color: #157DEC;" text="Save" />
                   <Button fx:id="btnNew" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#AddNew" style="-fx-background-color: #157DEC;" text="ADD NEW" />
                   <JFXTextField fx:id="LecName" layoutX="86.0" layoutY="176.0" prefHeight="29.0" prefWidth="430.0" promptText="Lecture_Name" />
                   <Pane fx:id="paneView" layoutX="1033.0" layoutY="506.0" prefHeight="382.0" prefWidth="591.0" />

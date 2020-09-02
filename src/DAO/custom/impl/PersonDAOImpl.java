@@ -19,7 +19,7 @@ public class PersonDAOImpl implements PersonDAO {
 
     @Override
     public boolean save(Person emp) throws Exception {
-        return CrudUtil.execute("INSERT INTO person VALUES (?,?,?,?,?,?)", emp.getNIC(),emp.getType_ID(), emp.getName(), emp.getDOB(), emp.getAge(),emp.getGender());
+        return false;//CrudUtil.execute("INSERT INTO person VALUES (?,?,?,?,?,?)", emp.getNIC(),emp.getType_ID(), emp.getName(), emp.getDOB(), emp.getAge(),emp.getGender());
     }
 
     @Override

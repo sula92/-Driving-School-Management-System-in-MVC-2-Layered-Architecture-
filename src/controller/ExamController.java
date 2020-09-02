@@ -1,21 +1,18 @@
 package controller;
 
-import DAO.CrudUtil;
 import business.BOFactory;
 import business.BOTypes;
 import business.custom.ExamBO;
-import business.custom.TrialBO;
-import business.exception.AlreadyExistsInOrderException;
+import business.exception.AlreadyExistsInExamException;
+import business.exception.SomeThingsWrongException;
 import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTimePicker;
 import dto.ExamDTO;
-import entity.Exam;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.geometry.Side;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -26,12 +23,9 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import util.ExamTM;
-import util.LectureTM;
 
 import java.io.IOException;
 import java.net.URL;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.*;
@@ -69,6 +63,7 @@ public class ExamController  {
 
     public void initialize() {
 
+        tblExam.getItems().clear();
         colview.setText("Total Absent");
 
 
@@ -80,49 +75,7 @@ public class ExamController  {
         coltotpass.setCellValueFactory(new PropertyValueFactory<>("totpass"));
         coltotfail.setCellValueFactory(new PropertyValueFactory<>("totfail"));
         colview.setCellValueFactory(new PropertyValueFactory<>("totab"));
-
-
-        /*try {
-            ResultSet rst = CrudUtil.execute("SELECT * FROM exam");
-
-            ObservableList<ExamTM> row = FXCollections.observableArrayList();
-
-
-            while (rst.next()) {
-
-                String p=getStatusCount(rst.getString(1),"passed");
-                String f=getStatusCount(rst.getString(1),"failed");
-                String a=getStatusCount(rst.getString(1),"absent");
-
-                int pass= Integer.parseInt(p);
-                int fail= Integer.parseInt(f);
-                int ab= Integer.parseInt(a);
-                String tot= String.valueOf(pass+fail+ab);
-
-
-                String date = String.valueOf(rst.getDate(2));
-                String time = String.valueOf(rst.getTime(3));
-
-
-
-                row.add(new ExamTM(rst.getString(1), date, time, rst.getString(4),p,f,a,tot));
-
-                System.out.println("jdbc" + Arrays.toString(new ObservableList[]{row}));
-
-            }
-            ObservableList<ExamTM> Ilist = FXCollections.observableArrayList(row);
-            tblExam.setItems(Ilist);
-            tblExam.refresh();
-
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
-
-
-
+        coldel.setCellValueFactory(new PropertyValueFactory<>("button"));
 
 
      try {
@@ -145,12 +98,13 @@ public class ExamController  {
                 int ab= Integer.parseInt(a);
                 String tot= String.valueOf(pass+fail+ab);
 
-
+                Button button=new Button("Delete");
+                button.setStyle("-fx-background-color: red;-fx-font-style: white");
 
                 exams.add(new ExamTM(exam.getExam_ID(), date,
-                        time, exam.getVenue(),tot,p,f,a));
+                        time, exam.getVenue(),tot,p,f,a,button));
             }
-            tblExam.setItems(exams);
+
 
             System.out.println(Arrays.toString(new ObservableList[]{exams}));
 
@@ -282,30 +236,42 @@ public class ExamController  {
 
     public void Save(ActionEvent event) {
 
-        ArrayList<ExamDTO> examDTOS=new ArrayList<ExamDTO>();
-        ExamDTO examDTO=new ExamDTO(examid.getText(),date.getValue().toString(),time.getValue().toString(),venue.getText());
+         ArrayList<ExamDTO> examDTOS = new ArrayList<ExamDTO>();
+         ExamDTO examDTO = new ExamDTO(examid.getText(), date.getValue().toString(), time.getValue().toString(), venue.getText());
 
-        System.out.println(Arrays.toString(new ArrayList[]{examDTOS}));
+         System.out.println(Arrays.toString(new ArrayList[]{examDTOS}));
 
-        try {
-            examBO.saveExam(examDTO);
-            examDTOS.add(examDTO);
-            new Alert(Alert.AlertType.INFORMATION,"Exam Added Successfully").show();
-            initialize();
-            tblExam.refresh();
-            //btnAddNew_OnAction(event);
-        } catch (Exception e) {
-            new Alert(Alert.AlertType.ERROR,"Something went wrong").show();
-            Logger.getLogger("controller").log(Level.SEVERE, null,e);
+        if(btnSave.getText().equalsIgnoreCase("save")) {
+
+         try {
+             examBO.saveExam(examDTO);
+             examDTOS.add(examDTO);
+             new Alert(Alert.AlertType.INFORMATION, "Exam Added Successfully").show();
+             initialize();
+             tblExam.refresh();
+             //btnAddNew_OnAction(event);
+         } catch (Exception e) {
+             new Alert(Alert.AlertType.ERROR, "Something went wrong").show();
+             Logger.getLogger("controller").log(Level.SEVERE, null, e);
+         }
+     }
+     else {
+            try {
+                examBO.updateExam(examDTO);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
 
-
     }
 
-    public void Update(ActionEvent event) {
+    public void Update(ActionEvent event) throws Exception {
+        examBO.updateExam(new ExamDTO(examid.getText(),date.getValue().toString(),time.getValue().toString(),venue.getText()));
     }
 
-    public void AddNew(ActionEvent event) {
+    public void AddNew(ActionEvent event) throws Exception {
+
+        btnSave.setText("Save");
 
         examid.clear();
         date.getEditor().clear();
@@ -314,6 +280,28 @@ public class ExamController  {
 
         btnSave.setText("Save");
         btnDelete.setDisable(true);
+        tblExam.getSelectionModel().clearSelection();
+
+        try {
+            String lid = null;
+            int id= Integer.parseInt(examBO.getLastExamID())+1;
+            if(id<10){
+                lid="00"+id;
+                examid.setText(lid);
+            }
+            else if(id>=10 && id<100){
+                lid="0"+id;
+                examid.setText(lid);
+            }
+            else {
+                lid=id+"";
+                examid.setText(lid);
+            }
+
+            //throw new SomeThingsWrongException("Some Things Went Wrong, Please Contact Sula!");
+        } catch (SomeThingsWrongException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -329,7 +317,7 @@ public class ExamController  {
             try {
                 examBO.deleteExam(selectedItem.getExam_ID());
                 tblExam.getItems().remove(selectedItem);
-            }catch (AlreadyExistsInOrderException e){
+            }catch (AlreadyExistsInExamException e){
                 new Alert(Alert.AlertType.INFORMATION,e.getMessage()).show();
             } catch (Exception e) {
                 new Alert(Alert.AlertType.ERROR,"Something went wrong, please contact DEPPO").show();
