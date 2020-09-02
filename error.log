@@ -14288,3 +14288,9 @@ Aug 30, 2020 10:32:45 AM com.sun.javafx.css.parser.CSSParser declaration
 WARNING: CSS Error parsing file:/E:/IT/DEP5/samadhilearners/-Driving-School-Management-System-in-MVC-2-Layered-Architecture-/out/production/-Driving-School-Management-System-in-MVC-2-Layered-Architecture-/view/style/style.css: Expected '<dash-style>' while parsing '-fx-border-style' at [23,22]
 Aug 30, 2020 10:32:45 AM com.sun.javafx.css.parser.CSSParser declaration
 WARNING: CSS Error parsing file:/E:/IT/DEP5/samadhilearners/-Driving-School-Management-System-in-MVC-2-Layered-Architecture-/out/production/-Driving-School-Management-System-in-MVC-2-Layered-Architecture-/view/style/style.css: Expected '<dash-style>' while parsing '-fx-border-style' at [42,22]
+Sep 02, 2020 8:52:45 AM de.jensd.fx.glyphs.GlyphIcon updateIcon
+SEVERE: Icon 'MAN' not found. Using 'ANCHOR' (default) instead
+Sep 02, 2020 8:52:45 AM com.sun.javafx.css.parser.CSSParser declaration
+WARNING: CSS Error parsing file:/E:/IT/DEP5/samadhilearners/-Driving-School-Management-System-in-MVC-2-Layered-Architecture-/out/production/-Driving-School-Management-System-in-MVC-2-Layered-Architecture-/view/style/style.css: Expected '<dash-style>' while parsing '-fx-border-style' at [23,22]
+Sep 02, 2020 8:52:45 AM com.sun.javafx.css.parser.CSSParser declaration
+WARNING: CSS Error parsing file:/E:/IT/DEP5/samadhilearners/-Driving-School-Management-System-in-MVC-2-Layered-Architecture-/out/production/-Driving-School-Management-System-in-MVC-2-Layered-Architecture-/view/style/style.css: Expected '<dash-style>' while parsing '-fx-border-style' at [42,22]

@@ -1,65 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b89519f-3576-4a77-9c29-4d53a2d5c688" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/-Driving-School-Management-System-in-MVC-2-Layered-Architecture-.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Required_Libraries.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/exception/SomeThingsWrongException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Barcode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Barcode.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Barcode1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Barcode1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Cryptography.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/RegEx_Simulator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/CrudUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/CrudUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/DAOTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/DAOTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/custom/BranchDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/BranchDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/custom/ExamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/ExamDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/custom/impl/BranchDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/impl/BranchDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/custom/impl/ExamDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/impl/ExamDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/custom/impl/LectureDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/impl/LectureDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/custom/impl/PersonDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/impl/PersonDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/custom/impl/Person_ContactDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/custom/impl/Person_ContactDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business/BOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/BOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business/BOTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/BOTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business/custom/ExamBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/custom/ExamBO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business/custom/impl/BranchBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/custom/impl/BranchBOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business/custom/impl/EmployeeBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/custom/impl/EmployeeBOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business/custom/impl/ExamBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/custom/impl/ExamBOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business/custom/impl/TrialBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/custom/impl/TrialBOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business/exception/AlreadyExistsInOrderException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/exception/AlreadyExistsInExamException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/BranchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/BranchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ExamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ExamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LectureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LectureController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MainFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MainFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/StudFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StudFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/StudentFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StudentFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/StudentMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StudentMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/TrainingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/TrialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/TrialController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/StudentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Person_Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Person_Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/BranchTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/BranchTM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/ExamTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/ExamTM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/LectureTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/LectureTM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/StudentTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/StudentTM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/TrialTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/TrialTM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Branch.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Branch.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Lecture.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Lecture.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/StudForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StudForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Training.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Trial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Trial.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="6b89519f-3576-4a77-9c29-4d53a2d5c688" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +49,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AppInitializer" />
@@ -143,8 +96,16 @@
       <workItem from="1598244860119" duration="134000" />
       <workItem from="1598245689789" duration="652000" />
       <workItem from="1598344861756" duration="1477000" />
-      <workItem from="1599015817969" duration="650000" />
+      <workItem from="1599015817969" duration="1138000" />
     </task>
+    <task id="LOCAL-00001" summary="xxx">
+      <created>1599016539129</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599016539129</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +123,15 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="xxx" />
+    <option name="LAST_COMMIT_MESSAGE" value="xxx" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="84" y="0" key="CommitChangelistDialog2" timestamp="1599016534048">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="84" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599016534048" />
     <state width="1493" height="79" key="GridCell.Tab.0.bottom" timestamp="1598212239497">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
